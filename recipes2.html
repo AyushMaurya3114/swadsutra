@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/ico/site.webmanifest">
+    <title>Recipe Search Results - SwädSutra</title> 
+    <!-- icons library -->
+    <!-- <script src="https://kit.fontawesome.com/55414edd7e.js" crossorigin="anonymous"></script>  --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="mainnav flex nav-height"> 
+
+        <div class="logo flex">
+            <a href="index.html" class="logo-link"> 
+                <img src="assets/logo.png" alt="company_logo"> 
+            </a> 
+            <h2 class=""> <a href="index.html" class="logo-text">Swäd Sutra</a></h2> 
+            </div>
+    
+            <div class="navlinks flex visibility">
+                <ul class="flex">
+                    <li><a href="index.html" class="hover-link">Home</a></li>
+                    <li><a href="recipes2.html?ingredients=" class="hover-link current-page">Recipes</a></li>
+                    <li><a href="#" class="hover-link">About Us</a></li>
+                    <li><a href="#" class="hover-link">Contact Us</a></li>
+                    <li><a href="#" class="hover-link secondary-button">My List</a></li>
+                    <li><a href="#" class="hover-link primary-button">My Account</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div> 
+    
+    
+    <!-- main page --> 
+    <section class="mainpage flex" style="height:auto"> 
+
+        <section class="mainpage1">
+            <!-- filters -->
+            <div class="filters flex">
+                
+                <table>
+                    <tr>
+                        <th style="text-align: left;">
+                            
+                            <h3>
+                                <i class="fa-solid fa-filter"></i>
+                                Filters
+                            </h3>
+                        </th> 
+                    </tr> 
+                    <tr>
+                        <td colspan="2">
+                            <hr> 
+                        </td>
+                    </tr>
+                    <!-- cooking skills -->
+                    <tr>
+                        <th>Cooking Skill</th> 
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input name="cooking-skill" type="radio" id="Beginner" value="Beginner" checked>
+                            <label for="Beginner">Beginner</label>
+                        </td>
+                        <td>
+                            <input name="cooking-skill" type="radio" id="Competent" value="Competent">
+                            <label for="Competent">Competent</label>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input name="cooking-skill" type="radio" id="Expert" value="Expert">
+                            <label for="Expert">Expert</label>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+    
+                    <!-- cooking time --> 
+                    <tr>
+                        <th>Cooking Time</th> 
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input name="cooking-time" type="radio" id="Quick" value="Quick" checked>
+                            <label for="Quick">Quick</label>
+                        </td>
+                        <td>
+                            <input name="cooking-time" type="radio" id="Moderate" value="Moderate">
+                            <label for="Moderate">Moderate</label>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input name="cooking-time" type="radio" id="Long" value="Long">
+                            <label for="Long">Long</label>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+    
+                    <!-- dietary --> 
+                    <tr>
+                        <th>Dietary</th> 
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input name="dietary" type="checkbox" id="Veg" value="Veg" checked>
+                            <label for="Veg">Veg</label>
+                        </td>
+                        <td>
+                            <input name="dietary" type="checkbox" id="Vegan" value="Vegan">
+                            <label for="Vegan">Vegan</label>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input name="dietary" type="checkbox" id="Ketogenic" value="Ketogenic">
+                            <label for="Ketogenic">Ketogenic</label>
+                        </td>
+                        <td>
+                            <input name="dietary" type="checkbox" id="Gluten-free" value="Gluten-free">
+                            <label for="Gluten-free">Gluten-free</label>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input name="dietary" type="checkbox" id="Others" value="Others">
+                            <label for="Others">Others</label> 
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Type here..." id="Others" width="200px">
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+    
+                    <!-- Allergy --> 
+                    <tr>
+                        <th>Allergy</th>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input name="Allergy" type="checkbox" id="Lactose (Milk)" value="Lactose (Milk)" checked>
+                            <label for="Lactose (Milk)">Lactose (Milk)</label>
+                        </td>
+                        <td>
+                            <input name="Allergy" type="checkbox" id="Anaphylaxis (Egg)" value="Anaphylaxis (Egg)">
+                            <label for="Anaphylaxis (Egg)">Anaphylaxis (Egg)</label>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input name="Allergy" type="checkbox" id="Nuts" value="Nuts">
+                            <label for="Nuts">Nuts</label>
+                        </td>
+                        <td>
+                            <input name="Allergy" type="checkbox" id="Peanut" value="Peanut">
+                            <label for="Peanut">Peanut</label>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <input name="Allergy" type="checkbox" id="Others-2" value="Others-2">
+                            <label for="Others-2">Others</label> 
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Type here..." id="Others" width="200px">
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+    
+                    <!-- Rating -->
+                    <tr>
+                        <th>Rating</th> 
+                    </tr> 
+                    <tr>
+                        <td colspan="2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span> 
+                            &nbsp; only 5 stars
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span> 
+                            &nbsp; from 4 stars
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span> 
+                            &nbsp; from 3 stars
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span> 
+                            &nbsp; from 2 stars
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span>
+                            <span class="fa fa-star "></span> 
+                            &nbsp; from 1 star
+                        </td>
+                    </tr> 
+    
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td colspan="2" class="clear-all-btn">
+                            <a href="#" class="primary-button"> Clear All</a>
+                        </td>
+                    </tr>
+    
+                </table>
+    
+            </div> 
+        </section>
+
+
+        <section class=" mainpage2 " style="height: auto">
+            <!-- search results -->
+            <div class="search-result">
+    
+                <!-- recipe search bar -->
+                <!-- <div class="recipe-searchbar">
+                    <form action="" class="recipe-searchform flex">
+                        <input type="text" placeholder="Search for a recipe" name="searchinput"> 
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            </button>
+                        </form>
+                    </div>  -->
+                    
+                    <div class="sort-options flex">
+                    <h3>Search Results:</h3> 
+                    <div class="sort-list">
+                        Sort by: &nbsp;
+                        <select name="sort-list" id="sort-list">
+                            <option value="Relevance">Relevance</option>
+                            <option value="Newest">Newest</option>
+                            <option value="Rating">Rating</option>
+                            <option value="Reviews">Reviews</option>
+                        </select>
+                </div>
+                </div>
+                
+    
+    
+                <!-- search result cards -->
+                <div class="result-cards" id="result-cards">
+                    
+                </div>
+            </div>
+        </section>
+    </section> 
+
+
+
+     <!-- footer -->
+     <footer class="footer" id="footer"> 
+        <div class="container">
+            <div class="footer-row flex">
+                <div class="footer-column footcol1 flex">
+                    <img src="assets/logo-white.png" alt="company_logo" width="100px" height="100px"> 
+                    <h2 class="logo-text">Swäd Sutra</h2>
+                </div> 
+                <div class="footer-column footcol2">
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="#">Ingredient Based Search</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div> 
+                <div class="footer-column footcol3">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">User guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footcol4">
+                    <h4>Subscribe to our FREE Newsletter</h4> 
+                    <p>To get delicious recipe recommendations directly in your inbox!</p> 
+                    <div class="emailbar">
+                        <form action="" class="emailbox flex">
+                            <input type="email" placeholder="Enter your email id" name="emailinput"> 
+                            <button type="submit" class="primary-button">
+                                Subscribe
+                            </button>
+                        </form> 
+                    </div> 
+                    <p>We promise not to spam your inbox!</p>
+                </div>
+            </div> 
+        </div>
+    </footer>
+    
+    <footer class="subfooter-1 flex">
+        <div class="social-links"> 
+            <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
+            <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i> </a>
+            <a href="#"><i class="fa-brands fa-youtube"></i> </a> 
+        </div>
+        <div class="language">
+                <select name="language" id="language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+        </div>
+    </footer>
+    <script src="recipes2.js"></script>
+</body>
+</html>

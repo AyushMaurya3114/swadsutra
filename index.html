@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/ico/site.webmanifest">
+    <title>Swäd Sutra - Cook food with ingredients available at your home! </title> 
+    <!-- icons library -->
+    <!-- <script src="https://kit.fontawesome.com/55414edd7e.js" crossorigin="anonymous"></script>  --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body> 
+    
+    <!-- nav bar -->
+    <div class="mainnav flex nav-height"> 
+
+        <div class="logo flex">
+            <a href="index.html" class="logo-link"> 
+                <img src="assets/logo.png" alt="company_logo"> 
+            </a> 
+            <h2 class=""> <a href="index.html" class="logo-text">Swäd Sutra</a></h2> 
+            </div>
+    
+            <div class="navlinks flex visibility">
+                <ul class="flex">
+                    <li><a href="index.html" class="hover-link current-page">Home</a></li>
+                    <li><a href="recipes2.html?ingredients=" class="hover-link">Recipes</a></li>
+                    <li><a href="#" class="hover-link">About Us</a></li>
+                    <li><a href="#" class="hover-link">Contact Us</a></li>
+                    <li><a href="#" class="hover-link secondary-button">My List</a></li>
+                    <li><a href="#" class="hover-link primary-button">My Account</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        
+        
+    <!-- hero section -->
+    <header class="hero flex">
+        <div class="header-left flex">
+            <h2 class='hero-h2'>
+                Unleash your <span class='hero-spl-text'>Inner Chef!</span>  
+            </h2> 
+            <h3 class='hero-h3'>
+                Turn Your Ingredients Into Culinary Masterpieces
+            </h3>
+            <p class='hero-p'> Welcome to the future of cooking! </p>
+            <p class='hero-p'> At SwädSutra, we turn your kitchen into a culinary playground. </p> 
+            <p class='hero-p'> No more recipe books or last-minute grocery store runs.</p> 
+            <p class='hero-p'> Simply tell us what ingredients you have, and we'll inspire your next meal.</p> 
+            <p class='hero-p'> Whether you're a seasoned chef or a kitchen novice, let your creativity run wild.</p> 
+
+            <p class='hero-p'>Bon appétit!</p> 
+        </div> 
+        <div class="header-right float-img"> 
+            <div class="hero-image">
+                <img src="assets/hero/hero3.png" alt="hero_image" class="newimg">
+            </div>
+        </div>
+    </header> 
+
+    <!-- Scroll icon --> 
+    <section id="section-1" class="flex">
+        <a id="scroll-btn" href="#ingredient"></a>
+      </section>
+    
+    <!-- main working ingredients section -->
+            
+        <!-- First Row -->
+             
+            <section class="ingredient flex" id="ingredient">
+                <div class="ingredients-text flex">
+                    <h2>Choose your ingredients from the categories:</h2>   
+                </div>
+                <!-- <div class="list-icon flex">
+                    <a href="#" class="">
+                        <i class="fa-solid fa-list-check fa-xl flex"></i> 
+                        <h4>My List</h4>
+                    </a> 
+                </div> -->
+            </section>
+            <section class="ingredients flex" id="ingredients"> 
+            <!-- <br>  -->
+            <div class="wrapper" >
+            <div class="category-card" id="category">
+                <div class="categories">
+                    <div class="ingredient-card">
+                        <span class="single-img img1"> 
+                            <span class="img-text">
+                                <h3>Vegetables <i class="fa-solid fa-caret-down fa-beat-fade" style="color: #ffffff;"></i></h3>
+                                <div class="category-ingredients">
+                                    <div class="ingredient-card"onclick="selectIngredient('Tomato')"><h4>Tomato</h4></div>
+                                    <div class="ingredient-card"onclick="selectIngredient('Potato')"><h4>Potato</h4></div>
+                                    <div class="ingredient-card"onclick="selectIngredient('Onion')"><h4>Onion</h4></div>
+                                </div>
+                            </span>
+                        </span>
+                    </div>
+                   
+                    <!-- <div class="category-card" id="category">
+                    <div class="ingredient-card">
+                        <span class="single-img img2"> 
+                            <span class="img-text">
+                                <h3>Lentils<i class="fa-solid fa-caret-down fa-beat-fade" style="color: #ffffff;"></i></h3>
+                                <div class="category-ingredients">
+                                    <div class="ingredient-card"onclick="selectIngredient('Tomato')"><h4>Tomato</h4></div>
+                                    <div class="ingredient-card"onclick="selectIngredient('Potato')"><h4>Potato</h4></div>
+                                    <div class="ingredient-card"onclick="selectIngredient('Onion')"><h4>Potato</h4></div>
+                                </div>
+                            </span>
+                        </span>
+                    </div>
+                   </div> -->
+                   <div class="category-card" id="category">
+                    <div class="ingredient-card">
+                        <span class="single-img img3"> 
+                            <span class="img-text">
+                                <h3>Grains & Flours <i class="fa-solid fa-caret-down fa-beat-fade" style="color: #ffffff;"></i></h3>
+                                <div class="category-ingredients">
+                                    <div class="ingredient-card"onclick="selectIngredient('Poha')"><h4>Poha</h4></div>
+                                    <div class="ingredient-card"onclick="selectIngredient('Wheat Flour')"><h4>Wheat Flour</h4></div>
+                                    <div class="ingredient-card"onclick="selectIngredient('Rice')"><h4>Rice</h4></div>
+                                </div>
+                            </span>
+                        </span>
+                    </div>
+                   </div>
+                   
+                   <div class="category-card" id="category">
+                    <div class="ingredient-card">
+                        <span class="single-img img4"> 
+                            <span class="img-text">
+                                <h3>Dairy & Bakery <i class="fa-solid fa-caret-down fa-beat-fade" style="color: #ffffff;"></i></h3>
+                                <div class="category-ingredients">
+                                    <div class="ingredient-card"onclick="selectIngredient('Bread')"><h4>Bread</h4></div>
+                                    <div class="ingredient-card"onclick="selectIngredient('Cheese')"><h4>Cheese</h4></div>
+                                    <div class="ingredient-card"onclick="selectIngredient('Ghee')"><h4>Ghee</h4></div>
+                                </div>
+                            </span>
+                        </span>
+                    </div>
+                   </div>
+                   
+                   <div class="category-card" id="category">
+                    <div class="ingredient-card">
+                        <span class="single-img img5"> 
+                            <span class="img-text">
+                                <h3>Spices <i class="fa-solid fa-caret-down fa-beat-fade" style="color: #ffffff;"></i></h3>
+                                <div class="category-ingredients">
+                                    <div class="ingredient-card"onclick="selectIngredient('Spices')"><h4>Chilli Powder</h4></div>
+                                    <div class="ingredient-card"onclick="selectIngredient('Spices')"><h4>Turmeric Powder</h4></div>
+                                    <div class="ingredient-card"onclick="selectIngredient('Spices')"><h4>Corriander Powder</h4></div>
+                                </div>
+                            </span>
+                        </span>
+                    </div>
+                   </div>
+                </div> 
+            </div>
+            </div>
+        </div>
+            <!-- Second Row -->
+            <!-- <div class="wrapper">
+                <div class="categories">
+                   
+                    <div class="ingredient-card" onclick="selectIngredient('Wheat Flour')">
+                        <span class="single-img img6"> 
+                            <span class="img-text">
+                                <h3>Wheat Flour</h3> 
+                            </span>
+                        </span>
+                    </div>
+                   
+                    <div class="ingredient-card" onclick="selectIngredient('Rice Flour')">
+                        <span class="single-img img7"> 
+                            <span class="img-text">
+                                <h3>Rice Flour</h3> 
+                            </span>
+                        </span>
+                    </div>
+                   
+                    <div class="ingredient-card" onclick="selectIngredient('Rice')">
+                        <span class="single-img img8"> 
+                            <span class="img-text">
+                                <h3>Rice</h3> 
+                            </span>
+                        </span>
+                    </div>
+                   
+                    <div class="ingredient-card" onclick="selectIngredient('Spices')">
+                        <span class="single-img img9"> 
+                            <span class="img-text">
+                                <h3>Spices</h3> 
+                            </span>
+                        </span>
+                    </div>
+                   
+                    <div class="ingredient-card" onclick="selectIngredient('Ghee')">
+                        <span class="single-img img10"> 
+                            <span class="img-text">
+                                <h3>Ghee</h3> 
+                            </span>
+                        </span>
+                    </div>
+                </div> 
+            </div> -->
+            <!-- <br> -->
+            <!-- <h4 style="padding-top: 15px;"><a href="#" class="hover-link" style=" font-weight: 500; font-size: 1.2rem;">Choose The Ingredients</a></h4> -->
+            <!-- <h2>or</h2>  -->
+
+            <!-- search bar --> 
+            
+            <div class="searchbar flex">
+                <form action="" class="searchform flex" id="recipe-search-form">
+                    <input type="text" placeholder="Your Selected Ingredients" name="searchinput" id="selected-ingredients" readonly> 
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </button>
+                </form>
+            </div> 
+            
+            <!-- find a recipe button 
+            <div class="find-button">
+                <a href="#" class="hover-link primary-button find-btn">FIND A RECIPE! &emsp; &ensp;<i class="fa-solid fa-angle-right fa-xl"></i></a> 
+            </div> -->
+        </section>
+        
+        <!-- footer -->
+        <footer class="footer" id="footer"> 
+            <div class="container">
+                <div class="footer-row flex">
+                    <div class="footer-column footcol1 flex">
+                        <img src="assets/logo-white.png" alt="company_logo" width="100px" height="100px"> 
+                        <h2 class="logo-text">Swäd Sutra</h2>
+                    </div> 
+                    <div class="footer-column footcol2">
+                        <h4>Sitemap</h4>
+                        <ul>
+                            <li><a href="#">Ingredient Based Search</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-column footcol3">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">User guides</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column footcol4">
+                        <h4>Subscribe to our FREE Newsletter</h4> 
+                        <p>To get delicious recipe recommendations directly in your inbox!</p> 
+                        <div class="emailbar">
+                            <form action="" class="emailbox flex">
+                                <input type="email" placeholder="Enter your email id" name="emailinput"> 
+                                <button type="submit" class="primary-button">
+                                    Subscribe
+                                </button>
+                            </form> 
+                        </div> 
+                        <p>We promise not to spam your inbox!</p>
+                    </div>
+                </div> 
+            </div>
+        </footer>
+        
+        <footer class="subfooter-1 flex">
+            <div class="social-links"> 
+                <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
+                <a href="#"><i class="fa-brands fa-facebook"></i> </a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i> </a>
+                <a href="#"><i class="fa-brands fa-youtube"></i> </a> 
+            </div>
+            <div class="language flex"> 
+                    <select name="language" id="language">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                    </select>
+            </div>
+        </footer>
+    <script src="resp.js"></script>
+    <script src="index.js"></script>
+    
+    </body>
+    </html>
