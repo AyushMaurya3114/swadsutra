@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 /* resets */
 
@@ -409,9 +410,9 @@ a#scroll-btn:before {
     margin: 0 auto;
 } 
 
-.ingredient-card{
+/* .ingredient-card{
     cursor: pointer;
-}
+} */
 
 .single-img {
     border-radius: 5px; 
@@ -486,7 +487,7 @@ a#scroll-btn:before {
     background-position: center center;
 }
 .img-text {
-    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(25,255,255,0)); 
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(25,255,255,0)); 
     padding: 0 10px 5px 10px; 
     width: 100%; 
     height: auto; 
@@ -496,7 +497,9 @@ a#scroll-btn:before {
     line-height: 50px; 
     transition: 0.5s ease; 
     text-align: center;
-    display: inline-block;
+    display: inline-block; 
+    cursor: pointer;
+
 } 
 
 .single-img:hover .img-text {
@@ -1035,6 +1038,13 @@ a#scroll-btn:before {
     padding: 0;
 }
 
+
+
+
+
+
+
+/* Contact us Form */
 
 
 

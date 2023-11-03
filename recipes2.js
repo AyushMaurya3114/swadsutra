@@ -24,7 +24,7 @@ const data = [
   {
    name: 'Aloo Tomato Sandwich',
    ingredients: ['Bread', 'Potato', 'Tomato', 'Spices', 'Ghee'],
-   steps: '1. Boil, mash, and season the potatoes. <br> 2. Spread the mashed potato mixture between slices of bread. <br> 3. Toast the sandwiches with ghee until golden brown. <br> 4. Serve hot with chutney or ketchup. '
+   steps: '1. Boil, mash, and season the potatoes. <br> 2. Spread the mashed potato mixture & tomato slices between slices of bread. <br> 3. Add some spices in it & toast the sandwiches with ghee until golden brown. <br> 4. Serve hot with chutney or ketchup. '
   },
   {
    name: 'Spicy Aloo Sandwich',

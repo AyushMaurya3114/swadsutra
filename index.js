@@ -13,8 +13,8 @@ function selectIngredient(ingredient) {
   document.getElementById('selected-ingredients').value = selectedIngredients.join(', ');
 
   // Toggle the 'selected' class to style the card
-  const card = document.querySelector(`.ingredient-card:contains(${ingredient})`);
-  card.classList.toggle('selected');
+  // const card = document.querySelector(`.ingredient-card:contains(${ingredient})`);
+  // card.classList.toggle('selected');
 }
 
 document.getElementById('recipe-search-form').addEventListener('submit', function (event) {
@@ -24,6 +24,8 @@ document.getElementById('recipe-search-form').addEventListener('submit', functio
 });
 const categoryCards = document.querySelectorAll('.category-card');
 
+
+//categories
 categoryCards.forEach(category => {
     const categoryName = category.querySelector('h3');
     const ingredients = category.querySelector('.category-ingredients');
