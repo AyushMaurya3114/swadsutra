@@ -36,6 +36,11 @@ SwädSutra is a simple web application built with HTML, CSS, and JavaScript that
 
 5\. Browse through the displayed recipes and enjoy cooking!
 
+## Demo
+To view a demo of the site, [click here](https://agrawal-yash.github.io/swadsutra)
+
+
+
 ## Contributing
 
 Contributions are welcome! This is just a beginner's project and so if you'd like to contribute to this project, feel free to fork this repository and submit a pull request with your changes.
